@@ -1,6 +1,4 @@
-<p align="center">
-  <a href="https://github.com/Swit-ChristianKim/swit-webhook/actions"><img alt="typescript-action status" src="https://github.com/Swit-ChristianKim/swit-webhook/actions/workflows/build-test/badge.svg"></a>
-</p>
+[![build-and-test](https://github.com/Swit-ChristianKim/swit-webhook/actions/workflows/test.yml/badge.svg?branch=main)](https://github.com/Swit-ChristianKim/swit-webhook/actions/workflows/test.yml)
 
 # Create a JavaScript Action using TypeScript
 
