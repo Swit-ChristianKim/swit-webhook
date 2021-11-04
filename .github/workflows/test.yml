@@ -21,4 +21,5 @@ jobs:
       - uses: actions/checkout@v2
       - uses: ./
         with:
-          milliseconds: 1000
+          WEBHOOK_URL:  ${{ secret.WEBHOOK_URL }}
+          MESSAGE:  'TEST 깃허브 액션'
