@@ -11,3 +11,6 @@ inputs:
   MESSAGE:
     required: true
     description: 'Swit message text or title of task card'
+branding:
+  icon: 'git-merge'
+  color: 'orange'
