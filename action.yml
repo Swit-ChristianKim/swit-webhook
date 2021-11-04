@@ -1,9 +1,6 @@
 name: 'Swit Webhook Action'
 description: 'Send message of channel and Crete Task Card'
 author: 'Christian Kim'
-runs:
-  using: 'node12'
-  main: 'dist/index.js'
 inputs:
   WEBHOOK_URL:
     required: true
@@ -11,6 +8,9 @@ inputs:
   MESSAGE:
     required: true
     description: 'Swit message text or title of task card'
+runs:
+  using: 'node12'
+  main: 'dist/index.js'
 branding:
   icon: 'git-merge'
   color: 'orange'
