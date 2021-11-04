@@ -1,5 +1,5 @@
 {
-  "name": "swit webhook action",
+  "name": "swit-webhook",
   "version": "0.0.1",
   "private": true,
   "description": "swit webhook action",
