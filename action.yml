@@ -1,11 +1,14 @@
-name: 'Your name here'
-description: 'Provide a description here'
-author: 'Your name or organization here'
-inputs:
-  milliseconds: # change this
-    required: true
-    description: 'input description here'
-    default: 'default value if applicable'
+name: 'Swit Webhook Action'
+description: 'Send message of channel and Crete Task Card'
+author: 'Christian Kim'
 runs:
-  using: 'node12'
+  using: 'node14'
   main: 'dist/index.js'
+inputs:
+  WEBHOOK_URL:
+    required: true
+    description: 'Swit Webhook URL'
+  MESSAGE:
+  required: true
+  description: 'Swit message text or title of task card'
+
