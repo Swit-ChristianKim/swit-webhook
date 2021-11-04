@@ -10,12 +10,11 @@ Send message at channel and create Task Card
 ## Usage
 
 ```yaml
-- uses: actions/checkout@v2
-- name: Create Sentry release
-  uses: getsentry/action-release@v1
+- name: Swit-webhook
+  uses: Swit-ChristianKim/swit-webhook@v1
   with:
     WEBHOOK_URL: ${{ secrets.WEBHOOK_URL }}
-    MESSAGE
+    MESSAGE: "insert message"
 ```
 
 ### Inputs
