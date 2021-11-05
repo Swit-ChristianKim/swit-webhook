@@ -1,0 +1,17 @@
+name: 'v1-test'
+on:
+  workflow_dispatch:
+    inputs:
+      message:
+        description: "message"
+        required: false
+        default: "swit-webhook-message"
+        type: string
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: Swit-ChristianKim/swit-webhook@v1
+        with:
+          WEBHOOK_URL:  ${{ secrets.WEBHOOK_URL }}
+          MESSAGE:  ${{ github.event.inputs.message }}
