@@ -1,4 +1,4 @@
-name: 'v1-test'
+name: 'v2-test'
 on:
   workflow_dispatch:
     inputs:
@@ -11,7 +11,7 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-      - uses: Swit-ChristianKim/swit-webhook@v1
+      - uses: Swit-ChristianKim/swit-webhook@v2
         with:
           WEBHOOK_URL:  ${{ secrets.WEBHOOK_URL }}
           MESSAGE:  ${{ github.event.inputs.message }}
