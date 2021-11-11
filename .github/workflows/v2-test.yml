@@ -11,7 +11,7 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-      - uses: Swit-ChristianKim/swit-webhook@v2
+      - uses: Swit-ChristianKim/swit-webhook@v1
         with:
           WEBHOOK_URL:  ${{ secrets.WEBHOOK_URL }}
           MESSAGE:  ${{ github.event.inputs.message }}
