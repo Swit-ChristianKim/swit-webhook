@@ -15,3 +15,7 @@ jobs:
         with:
           WEBHOOK_URL:  ${{ secrets.WEBHOOK_URL }}
           MESSAGE:  ${{ github.event.inputs.message }}
+      - uses: Swit-ChristianKim/swit-webhook@v2
+        with:
+          WEBHOOK_URL:  ${{ secrets.WEBHOOK_URL }}
+          MESSAGE:  ${{ github.event.inputs.message }} - ${{job.status}}
