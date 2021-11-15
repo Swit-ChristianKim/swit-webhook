@@ -24,4 +24,6 @@ jobs:
       - uses: Swit-ChristianKim/swit-webhook@v2
         with:
           WEBHOOK_URL:  ${{ secrets.WEBHOOK_URL }}
-          MESSAGE:  ${{ toJSON(needs) }} \n \n 테스트
+          MESSAGE:  ${{ toJSON(needs) }}
+            테스트
+            테스트
