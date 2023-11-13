@@ -11,7 +11,7 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-      - uses: Swit-ChristianKim/swit-webhook@v2
+      - uses: Swit-ChristianKim/swit-webhook@v3
         with:
           WEBHOOK_URL:  ${{ secrets.WEBHOOK_URL }}
           MESSAGE:  ${{ github.event.inputs.message }}
@@ -21,7 +21,7 @@ jobs:
     needs: [test]
     if: always() && (needs.test.result == 'failure' || needs.test.result == 'success' )
     steps:
-      - uses: Swit-ChristianKim/swit-webhook@v2
+      - uses: Swit-ChristianKim/swit-webhook@v3
         with:
           WEBHOOK_URL:  ${{ secrets.WEBHOOK_URL }}
           MESSAGE:  ${{ toJSON(needs) }}

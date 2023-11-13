@@ -11,7 +11,7 @@ Send message at channel and create Task Card
 
 ```yaml
 - name: Swit-webhook
-  uses: Swit-ChristianKim/swit-webhook@v2
+  uses: Swit-ChristianKim/swit-webhook@v3
   with:
     WEBHOOK_URL: ${{ secrets.WEBHOOK_URL }}
     MESSAGE: "insert message"
