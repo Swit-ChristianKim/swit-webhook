@@ -1,11 +1,10 @@
-import { WebHookClient } from "./web-hook-client";
-// eslint-disable-next-line sort-imports
-import * as core from "@actions/core";
+import * as core from '@actions/core';
+import { WebHookClient } from './web-hook-client';
 
-async function run(): Promise<void> {
+export async function run(): Promise<void> {
   try {
-    const webHookUrl: string = core.getInput("WEBHOOK_URL");
-    const message: string = core.getInput("MESSAGE");
+    const webHookUrl: string = core.getInput('WEBHOOK_URL');
+    const message: string = core.getInput('MESSAGE');
     core.info(`webhook url - ${webHookUrl}`);
     core.info(`message - ${message}`);
 
@@ -16,5 +15,3 @@ async function run(): Promise<void> {
     if (error instanceof Error) core.setFailed(error.message);
   }
 }
-
-run();
