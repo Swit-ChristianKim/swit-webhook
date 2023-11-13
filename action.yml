@@ -9,7 +9,7 @@ inputs:
     required: true
     description: 'Swit message text or title of task card'
 runs:
-  using: 'node12'
+  using: 'node20'
   main: 'dist/index.js'
 branding:
   icon: 'git-merge'
