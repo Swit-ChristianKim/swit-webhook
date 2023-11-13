@@ -1,4 +1,4 @@
-import * as core from '@actions/core';
+import core from '@actions/core';
 import { WebHookClient } from './web-hook-client';
 
 export async function run(): Promise<void> {
